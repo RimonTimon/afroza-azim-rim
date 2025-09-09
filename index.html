@@ -641,20 +641,20 @@
           mapObserver.observe(document.getElementById("map"));
         });
 
-      // document.addEventListener("contextmenu", function (e) {
-      //   e.preventDefault();
-      // });
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
 
 
-      // document.onkeydown = function (e) {
-      //   if (
-      //     e.keyCode === 123 || // F12
-      //     (e.ctrlKey && e.shiftKey && [73, 74, 67].includes(e.keyCode)) || 
-      //     (e.ctrlKey && e.keyCode === 85) 
-      //   ) {
-      //     return false;
-      //   }
-      // };
+      document.onkeydown = function (e) {
+        if (
+          e.keyCode === 123 || // F12
+          (e.ctrlKey && e.shiftKey && [73, 74, 67].includes(e.keyCode)) || 
+          (e.ctrlKey && e.keyCode === 85) 
+        ) {
+          return false;
+        }
+      };
 
 
       // json
@@ -684,3 +684,4 @@
     </script>
   </body>
 </html>
+
